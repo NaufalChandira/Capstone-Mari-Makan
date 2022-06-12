@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+
+html {
+  background-color: #e9d5ca;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orelega One", cursive;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #4d4c7d;
+  color: black;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.navbar-logo {
+  flex: 1;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.navbar-toggle {
+  display: none;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-header {
+  width: 100%;
+  min-height: 400px;
+}
+
+.box-one {
+  background-color: #827397;
+  margin: 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+  flex-grow: 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.box-one p {
+  font-size: 20px;
+}
+
+.card-one {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color: #827397;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  padding-right: 55px;
+}
+
+.card {
+  width: 100%;
+}
+main {
+  width: 100%;
+  padding: 16px;
+  margin: 15px auto auto;
+  margin-top: -300px;
+}
+
+.img-one {
+  width: 100%;
+}
+
+.slider-img {
+  width: 900px;
+}
+
+img {
+  border: 4px solid #575d63;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  margin: 20px;
+}
+
+.font-size {
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.font-size-cat {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  background-color: #4d4c7d;
+  text-align: center;
+  padding: 10px;
+  margin-top: 200px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+.caption-li {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.image-header {
+  padding-left: 500px;
+  width: 100%;
+  display: block;
+  margin-top: -250px;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /*content main*/
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: -10px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-left: -10px;
+  }
+
+  .navbar-toggle {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .active {
+    display: block;
+  }
+}
